@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One bit richer at a time</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	
+	<header> 
+		<button class='newnote'>New Note</button>
+		<form> 
+			<div> 
+				<label for='username'>Email/Username</label>
+				<input id='username' placeholder='Username' type="text" name="username" >
+			</div>
+			<div> 
+				<label for='password'>Password</label>
+				<input id='password' placeholder="Password" type="password" name="password">
+			</div>
+		</form>
+	</header>
+
+	<main>
+		<section>
+			<label>New article</label>
+			<div contenteditable="true">  </div>
+			<div class='new-article-buttons'>
+				<button>Save draft</button>
+				<button>Publish</button>
+			</div>
+		</section>
+	</main>
+
+<script type="text/javascript" src='app.js'></script>
+</body>
+</html>
+
+
+<style type="text/css">
+	label {
+		display: block;
+		position: absolute;
+		top: -30px;
+		border: 3px solid white;
+		height: 25px;
+	}
+	.new-article-buttons {
+		position: absolute;
+		bottom: -30px;
+		right: 0;
+		height: 30px;
+	}
+	main section {
+		position: relative;
+		width: 80%;
+		height: 60%;
+		border: 3px solid white;
+		display: none;
+		color: silver;
+	}
+	button.newnote {
+		margin-right: auto;
+	}
+	header {
+		display: flex;
+		justify-content: flex-end;
+	}
+	form {
+		display: flex;
+		flex-direction: row;
+	}
+	form div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		border: 1px solid orange;
+		height: 90%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+/*	article {
+		background-color: black;
+		color: white;
+		padding: 2px 4px;
+		margin: 3px;
+		width: 200px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+	}*/
+	.write {
+		height: 400px;
+		width: 300px;
+	}
+
+</style>
